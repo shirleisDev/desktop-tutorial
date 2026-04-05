@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030b18ce;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo horizontalmente */
+}
+
+/* 1. Posicionamento do Título a 25% do topo */
+#title {
+    margin-top: 25vh; /* 25% da altura da tela */
+    background: linear-gradient(135deg, #243248 10%, #35579b93 22%,#106a976e 15%,#2871e6 22%,#24324870 0%, #162447 100%);
+    border-radius: 30px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px; /* Espaço entre o título e os cards */
+}
+
+.titulo h1 {
+ 
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* 2. Organização da Grade de Cards */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #1a1d23;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.06);
+       transform: translateY(-10px); /* Eleva o card levemente */
+    
+    /* Brilho Azul Galáctico (Neon) */
+    box-shadow: 0 10px 30px rgba(0, 150, 255, 0.4), 
+                0 0 15px rgba(100, 50, 255, 0.3); 
+    
+    /* Borda acende levemente */
+    border-color: #0096ff;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 5px;
+}
+
+/* 3. Layout Inferior (Propaganda e Curiosidades) */
+.layout-principal {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.secao-propaganda, .secao-curiosidades {
+    flex: 1;
+}
+
+.card-curiosidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: #111419;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-curiosidade img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+.btn-venda{ 
+    font-size: 22px;
+    background-color: #243248;
+    color: rgb(244, 241, 241);
+}
