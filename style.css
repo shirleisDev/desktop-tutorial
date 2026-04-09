@@ -1,3 +1,11 @@
+ body .fundo img {
+    width: 100%;
+    height: 500px; /* Altere para a altura que você precisa */
+    background-image: url('./'); /* Faltou isso! */
+    background-repeat: repeat; /* Escolha apenas UM: repeat, repeat-x ou repeat-y */
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -9,10 +17,39 @@ body {
     align-items: center; /* Centraliza tudo horizontalmente */
 }
 
+
+.jornal-container {
+    perspective: 100px; /* Dá o efeito 3D de profundidade */
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    
+    border-left: 50px;
+    object-fit: cover; /* Resolve o problema de ficar esticado! */
+    border-radius: 29px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.02);
+    
+}
+
+   .faixa-decorativa {
+  width: 100%;            /* Ocupa toda a largura da tela */
+  height: 100px;          /* Ajuste a altura conforme sua figura */
+  background-image: url('');
+  background-repeat: repeat-x; /* Repete a imagem apenas na horizontal */
+  background-position: center;
+  background-size: contain;    /* Garante que a imagem caiba na altura definida */
+  margin: 20px 0;         /* Espaçamento opcional entre os containers */
+}
+
+
+
 /* 1. Posicionamento do Título a 25% do topo */
 #title {
-    margin-top: 25vh; /* 25% da altura da tela */
-    background: linear-gradient(135deg, #243248 10%, #35579b93 22%,#106a976e 15%,#2871e6 22%,#24324870 0%, #162447 100%);
+    margin-top: 5vh; /* 25% da altura da tela */
+    background: linear-gradient(135deg, #88a5d4a3 10%, #a1b6df93 22%,#106a976e 15%,#2871e6 22%,#24324870 0%, #162447 100%);
     border-radius: 30px;
     text-align: center;
     width: 50%;
@@ -31,6 +68,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
     gap: 20px;
+    margin-top: 8%;
     width: 90%;
     max-width: 1200px;
     margin-bottom: 50px;
