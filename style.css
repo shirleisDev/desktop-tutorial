@@ -5,7 +5,8 @@
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-  border-color: #3d9716 4px solid;
+ -webkit-text-stroke: 2px #050133d0; 
+
 }
 @keyframes mudarESumir {
     0% {
