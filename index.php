@@ -427,7 +427,7 @@ if (isset($_GET['logout'])) {
      
     <!-- Banner Principal -->
     <div class="jornal-container">
-        <img src="https://forbes.com.br" alt="Banner Street Fighter">
+        <img src="https://sm.ign.com/ign_br/gallery/s/starfield-/starfield-xbox-games-showcase-2023-trailer_pmcm.jpg" alt="Banner Street Fighter">
     </div>
          
     <!-- Carrossel / Slider de Imagens -->
